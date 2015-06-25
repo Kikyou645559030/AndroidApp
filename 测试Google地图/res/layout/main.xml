@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <!--<HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            <Button
+                    android:id="@+id/b_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="交通"/>
+            <Button
+                    android:id="@+id/b_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="卫星"/>
+            <Button
+                    android:id="@+id/b_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="街景"/>
+            <Button
+                    android:id="@+id/b_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="其他"/>
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <com.google.android.gms.maps.MapView
+            android:id="@+id/mv_map"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>-->
+
+    <fragment
+            android:id="@+id/f_map"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            class="com.google.android.gms.maps.SupportMapFragment" />
+</LinearLayout>
+

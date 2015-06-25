@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+	<!--
+	"always" 表示一直显示在标题栏上
+	"nerve" 表示一直不显示在标题栏，通过menu菜单按键调出
+	"ifRoom" 表示如果有位置就显示在标题栏上，如果位置不够就全部都不显示在标题栏，通过menu菜单调出
+	android:orderInCategory="12" 排序，优先级，优先级越低越靠前(左)
+	android:title="I'm title" 长按时会Toast显示的内容
+	android:id="@+id/menu_title" 唯一标识，用于在处理菜单点击事件时使用
+	android:icon="@drawable/icon_download" 显示的图标
+	-->
+	<item
+			android:id="@+id/menu_title"
+			android:showAsAction="always"
+			android:orderInCategory="12"
+			android:icon="@drawable/icon_action_home_category"
+			android:title="I'm title">
+		<menu>
+			<item
+					android:id="@+id/menu_child1"
+					android:title="I'm child"/>
+			<item
+					android:id="@+id/menu_child2"
+					android:title="I'm child"/>
+			<item
+					android:id="@+id/menu_child3"
+					android:title="I'm child"/>
+		</menu>
+	</item>
+	<item
+			android:id="@+id/menu_download"
+			android:orderInCategory="11"
+			android:showAsAction="always"
+			android:icon="@drawable/icon_download"
+			android:title="I'm title"/>
+	<item
+			android:id="@+id/menu_upload"
+			android:orderInCategory="10"
+			android:showAsAction="always"
+			android:icon="@drawable/icon_upload"
+			android:title="I'm title"/>
+</menu>

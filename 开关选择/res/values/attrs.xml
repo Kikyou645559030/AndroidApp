@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<!--OnOff这个自定义控件的属性的设置-->
+	<declare-styleable name="OnOff">
+		<attr name="slide_state" format="boolean" />
+		<!--reference 引用类型-->
+		<attr name="slide_drawable" format="reference" />
+	</declare-styleable>
+</resources>

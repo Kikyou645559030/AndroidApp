@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="app_name">百度地图测试</string>
+	<string name="map_controller1">二维1</string>
+	<string name="map_controller2">卫星2</string>
+	<string name="map_controller3">交通3</string>
+	<string name="map_controller4">热力4</string>
+	<string name="map_controller5">清空5</string>
+	<string name="map_controller6">取消标记6</string>
+	<string name="map_controller7">普通标记7</string>
+	<string name="map_controller8">几何标记8</string>
+	<string name="map_controller9">文字标记9</string>
+	<string name="map_controller10">隐藏弹出框10</string>
+	<string name="map_controller11">地形图图层11</string>
+	<string name="map_controller12">热力图功能12</string>
+</resources>

@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+		>
+
+	<LinearLayout
+			android:orientation="vertical"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			>
+
+		<Button
+				android:id="@+id/b1"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="Button"
+				/>
+
+		<Button
+				android:id="@+id/b2"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="Button"
+				/>
+
+		<EditText
+				android:id="@+id/et1"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:ems="10"
+				android:inputType="textPersonName"
+				>
+			<requestFocus/>
+		</EditText>
+
+		<TextView
+				android:id="@+id/tv1"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="Medium Text"
+				android:textAppearance="?android:attr/textAppearanceMedium"
+				/>
+
+		<TextView
+				android:id="@+id/tv2"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="Large Text"
+				android:textAppearance="?android:attr/textAppearanceLarge"
+				/>
+
+		<TextView
+				android:id="@+id/tv3"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="Large Text"
+				android:textAppearance="?android:attr/textAppearanceLarge"
+				/>
+
+		<TextView
+				android:id="@+id/tv4"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="Large Text"
+				android:textAppearance="?android:attr/textAppearanceLarge"
+				/>
+
+		<Button
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="Button"
+				/>
+
+		<Button
+				android:id="@+id/b3"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="Button"
+				/>
+
+		<EditText
+				android:id="@+id/et2"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:ems="10"
+				android:inputType="textPersonName"
+				>
+
+			<requestFocus/>
+		</EditText>
+
+		<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="Medium Text"
+				android:textAppearance="?android:attr/textAppearanceMedium"
+				/>
+
+		<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="Large Text"
+				android:textAppearance="?android:attr/textAppearanceLarge"
+				/>
+
+		<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="Large Text"
+				android:textAppearance="?android:attr/textAppearanceLarge"
+				/>
+
+		<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="Large Text"
+				android:textAppearance="?android:attr/textAppearanceLarge"
+				/>
+
+		<Button
+				android:id="@+id/button1"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="Button"
+				/>
+
+		<Button
+				android:id="@+id/button2"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="Button"
+				/>
+
+		<EditText
+				android:id="@+id/editText1"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:ems="10"
+				android:inputType="textPersonName"
+				>
+			<requestFocus/>
+		</EditText>
+
+		<TextView
+				android:id="@+id/textView1"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="Medium Text"
+				android:textAppearance="?android:attr/textAppearanceMedium"
+				/>
+
+		<TextView
+				android:id="@+id/textView2"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="Large Text"
+				android:textAppearance="?android:attr/textAppearanceLarge"
+				/>
+
+		<TextView
+				android:id="@+id/textView3"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="Large Text"
+				android:textAppearance="?android:attr/textAppearanceLarge"
+				/>
+
+		<TextView
+				android:id="@+id/textView4"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="Large Text"
+				android:textAppearance="?android:attr/textAppearanceLarge"
+				/>
+	</LinearLayout>
+</ScrollView>
