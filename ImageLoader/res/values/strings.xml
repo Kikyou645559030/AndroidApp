@@ -1,4 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) $today.year.Liu_ZhiChao.
+  ~ To change this template use File | Settings | Editor | Copyright | Copyright Profiles.
+  -->
+
 <resources>
 	<string name="app_name">ImageLoader</string>
+	<!-- app network -->
+	<string name="network_no_response">网络异常，请重试</string>
+	<string name="network_response_error">服务器数据响应异常</string>
+	<string name="network_no_connected">网络异常，请检查网络连接</string>
+	<!-- dialog message -->
+	<string name="dialog_loading">Loading...</string>
 </resources>

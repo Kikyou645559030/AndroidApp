@@ -1,12 +1,68 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-	android:orientation="vertical"
-	android:layout_width="fill_parent"
-	android:layout_height="fill_parent">
+<!--
+  ~ Copyright (c) $today.year.Liu_ZhiChao.
+  ~ To change this template use File | Settings | Editor | Copyright | Copyright Profiles.
+  -->
 
-	<TextView
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:scrollbars="none"
+	android:background="@color/white">
+
+	<LinearLayout
+		android:orientation="vertical"
 		android:layout_width="fill_parent"
-		android:layout_height="wrap_content"
-		android:text="Hello World, MyActivity" />
-</LinearLayout>
+		android:layout_height="fill_parent">
 
+		<ImageView
+			android:id="@+id/image1"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content" />
+
+		<ImageView
+			android:id="@+id/image2"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content" />
+
+		<ImageView
+			android:id="@+id/image3"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content" />
+
+		<ImageView
+			android:id="@+id/image4"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content" />
+
+		<ImageView
+			android:id="@+id/image5"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content" />
+
+		<ImageView
+			android:id="@+id/image6"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content" />
+
+		<ImageView
+			android:id="@+id/image7"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content" />
+
+		<ImageView
+			android:id="@+id/image8"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content" />
+
+		<ImageView
+			android:id="@+id/image9"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content" />
+
+		<ImageView
+			android:id="@+id/image10"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content" />
+	</LinearLayout>
+</ScrollView>

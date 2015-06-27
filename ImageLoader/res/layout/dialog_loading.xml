@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  ~ Copyright (c) $today.year.Liu_ZhiChao.
+  ~ To change this template use File | Settings | Editor | Copyright | Copyright Profiles.
+  -->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:layout_gravity="center"
+	android:background="@drawable/gray_corner_button_selector"
+	android:gravity="center">
+
+	<View
+		android:layout_width="80dp"
+		android:layout_height="80dp"
+		android:layout_centerInParent="true" />
+
+	<LinearLayout
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_centerInParent="true"
+		android:orientation="vertical"
+		android:padding="5dp">
+
+		<ProgressBar
+			android:layout_width="40dp"
+			android:layout_height="40dp"
+			android:layout_gravity="center"
+			android:layout_marginBottom="5dp"
+			android:clickable="false"
+			android:gravity="center" />
+
+		<TextView
+			android:id="@+id/dialog_loading_msg"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center"
+			android:gravity="center"
+			android:lineSpacingExtra="3dp"
+			android:text="@string/dialog_loading"
+			android:textColor="#ffffffff"
+			android:textSize="13sp" />
+	</LinearLayout>
+</RelativeLayout>

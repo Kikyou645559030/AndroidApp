@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) $today.year.Liu_ZhiChao.
+  ~ To change this template use File | Settings | Editor | Copyright | Copyright Profiles.
+  -->
+
+<resources>
+	<color name="transparent">@android:color/transparent</color>
+	<color name="white">#ffffff</color>
+	<color name="gray">#999999</color>
+	<color name="black">#000000</color>
+	<color name="load_bg">#20cccccc</color>
+</resources>

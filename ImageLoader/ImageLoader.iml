@@ -15,5 +15,8 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" exported="" name="universal-image-loader-1.8.5" level="application" />
+    <orderEntry type="library" exported="" name="android-support-v4" level="application" />
+    <orderEntry type="library" exported="" name="android-async-http-1.4.4-fix" level="application" />
   </component>
 </module>
