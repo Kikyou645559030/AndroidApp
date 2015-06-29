@@ -1,5 +1,5 @@
 /*
- * Copyright (c) $today.year.Liu_ZhiChao.
+ * Copyright (c) Liu_ZhiChao.
  * To change this template use File | Settings | Editor | Copyright | Copyright Profiles.
  */
 
@@ -27,6 +27,7 @@ public class ImageLoaderTools {
 					.cacheInMemory(true)
 					.cacheOnDisc(true)
 					.bitmapConfig(Bitmap.Config.RGB_565)
+//					.postProcessor(new CircleImageProcessor())//设置处理图片为圆形,测试无效
 					.build();
 		} catch (Exception e) {
 			e.printStackTrace();

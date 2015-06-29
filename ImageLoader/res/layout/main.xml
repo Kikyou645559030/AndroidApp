@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-  ~ Copyright (c) $today.year.Liu_ZhiChao.
+  ~ Copyright (c) Liu_ZhiChao.
   ~ To change this template use File | Settings | Editor | Copyright | Copyright Profiles.
   -->
 
@@ -63,6 +63,11 @@
 		<ImageView
 			android:id="@+id/image10"
 			android:layout_width="wrap_content"
+			android:layout_height="wrap_content" />
+
+		<ListView
+			android:id="@+id/img_list_view"
+			android:layout_width="match_parent"
 			android:layout_height="wrap_content" />
 	</LinearLayout>
 </ScrollView>

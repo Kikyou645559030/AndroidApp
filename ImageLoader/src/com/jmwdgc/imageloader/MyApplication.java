@@ -1,5 +1,5 @@
 /*
- * Copyright (c) $today.year.Liu_ZhiChao.
+ * Copyright (c) Liu_ZhiChao.
  * To change this template use File | Settings | Editor | Copyright | Copyright Profiles.
  */
 
@@ -50,7 +50,7 @@ public class MyApplication extends Application {
 				.tasksProcessingOrder(QueueProcessingType.FIFO) // default
 				.denyCacheImageMultipleSizesInMemory() //default 强制UIL在内存中不能存储内容相同但大小不同的图像。由于完整大小的图片会存储在磁盘缓存中，后面当图片加载进入内存，他们就会缩小到ImageView的大小（图片要显示的尺寸），然而在某些情况下,相同的图像第一次显示在一个小的View中,
 				// 然后又需要在一个大的View中显示。同时,两个不同大小的相同内容的图片就会被将被存储在内存中。
-				.memoryCache(new LruMemoryCache(2 * 1024 * 1024)) //你可以指定内存缓存的实现。你可以使用现成的解决方案(他们都是实现limited  size-cache,如果超过缓存大小,就通过一定算法删除一个对象)
+				.memoryCache(new LruMemoryCache(2 * 1024 * 1024)) //内存缓存策略，出现OOM时需要注意，你可以指定内存缓存的实现。你可以使用现成的解决方案(他们都是实现limited  size-cache,如果超过缓存大小,就通过一定算法删除一个对象)
 				.memoryCacheSize(2 * 1024 * 1024)
 				.memoryCacheSizePercentage(13) // default
 //				.discCache(new UnlimitedDiscCache(cacheDir)) // default

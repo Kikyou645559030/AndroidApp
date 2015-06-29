@@ -1,5 +1,5 @@
 /*
- * Copyright (c) $today.year.Liu_ZhiChao.
+ * Copyright (c) Liu_ZhiChao.
  * To change this template use File | Settings | Editor | Copyright | Copyright Profiles.
  */
 
@@ -8,14 +8,19 @@ package com.jmwdgc.imageloader.activity;
 import android.graphics.Bitmap;
 import android.view.View;
 import android.widget.ImageView;
+import android.widget.ListView;
 import com.jmwdgc.imageloader.R;
+import com.jmwdgc.imageloader.adapter.ImageListAdapter;
 import com.jmwdgc.imageloader.common.AnimateFirstDisplayListener;
 import com.jmwdgc.imageloader.common.ImageLoaderTools;
 import com.nostra13.universalimageloader.core.DisplayImageOptions;
 import com.nostra13.universalimageloader.core.ImageLoader;
 import com.nostra13.universalimageloader.core.assist.ImageSize;
+import com.nostra13.universalimageloader.core.assist.PauseOnScrollListener;
 import com.nostra13.universalimageloader.core.assist.SimpleImageLoadingListener;
 import com.nostra13.universalimageloader.core.display.RoundedBitmapDisplayer;
+
+import java.util.Arrays;
 
 /**
  * Created by 刘志超 on 2015/6/25.
@@ -33,6 +38,8 @@ public class MyActivity extends BaseActivity {
 	public final static String IMAGE_URL_8 = "http://img2.ph.126.net/mXtTrqDxfHt9CMPaON-OHw==/6597155528565015554.jpg";
 	public final static String IMAGE_URL_9 = "http://img1.ph.126.net/H6pw3CibWV2590a8zUyzNA==/6597829529191552843.jpg";
 	public final static String IMAGE_URL_10 = "http://img2.ph.126.net/eG11R_dNw_ZrXMMnU_6LWA==/1556838096204570722.jpg";
+	public final static String[] IMAGE_URL_LIST = {IMAGE_URL_1, IMAGE_URL_2, IMAGE_URL_3, IMAGE_URL_4,
+			IMAGE_URL_5, IMAGE_URL_6, IMAGE_URL_7, IMAGE_URL_8, IMAGE_URL_9, IMAGE_URL_10};
 
 	/**
 	 * 主要显示图片的方法displayImage(), loadImage(),loadImageSync()
@@ -49,6 +56,7 @@ public class MyActivity extends BaseActivity {
 	private ImageView image8;
 	private ImageView image9;
 	private ImageView image10;
+	private ListView imgListView;
 
 	private AnimateFirstDisplayListener displayListener = new AnimateFirstDisplayListener();
 
@@ -69,11 +77,13 @@ public class MyActivity extends BaseActivity {
 		image8 = (ImageView) findViewById(R.id.image8);
 		image9 = (ImageView) findViewById(R.id.image9);
 		image10 = (ImageView) findViewById(R.id.image10);
+		imgListView = (ListView) findViewById(R.id.img_list_view);
 	}
 
 	@Override
 	protected void setListener() {
-
+		/**ImageLoader控制在滑动的时候是否停止加载图片，第二个参数是滑动是否暂停，第三个参数是快速滑动是否暂停*/
+		imgListView.setOnScrollListener(new PauseOnScrollListener(imageLoader, false, true));
 	}
 
 	@Override
@@ -158,10 +168,22 @@ public class MyActivity extends BaseActivity {
 		imageLoader.displayImage(IMAGE_URL_8, image8, ImageLoaderTools.getImageOptions(R.drawable.empty_bg, Bitmap.Config.ARGB_4444), displayListener);
 		imageLoader.displayImage(IMAGE_URL_9, image9, ImageLoaderTools.getImageOptions(R.drawable.empty_bg, Bitmap.Config.ARGB_8888), displayListener);
 		imageLoader.displayImage(IMAGE_URL_10, image10, ImageLoaderTools.getImageOptions(R.drawable.empty_bg, Bitmap.Config.ALPHA_8), displayListener);
+
+		//加载sd卡上的图片
+//		String imageUrl1 = ImageDownloader.Scheme.FILE.wrap(Environment.getExternalStorageDirectory().getAbsolutePath() + "/img.jpg");
+		//加载assets目录中的图片
+//		String imageUrl2 = ImageDownloader.Scheme.ASSETS.wrap("img.jpg");
+		//加载资源文件中的图片
+//		String imageUrl3 = ImageDownloader.Scheme.DRAWABLE.wrap("R.drawable.img");
+//		String imageUrl4 = ImageDownloader.Scheme.HTTP.wrap("");
+//		String imageUrl5 = ImageDownloader.Scheme.HTTPS.wrap("");
+//		String imageUrl6 = ImageDownloader.Scheme.CONTENT.wrap("");
+
+		ImageListAdapter imageListAdapter = new ImageListAdapter(mContext, Arrays.asList(IMAGE_URL_LIST));
+		imgListView.setAdapter(imageListAdapter);
 	}
 
 	@Override
 	public void onClick(View v) {
-
 	}
 }
