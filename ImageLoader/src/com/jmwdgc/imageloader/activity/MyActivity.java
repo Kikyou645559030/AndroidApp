@@ -13,6 +13,7 @@ import com.jmwdgc.imageloader.R;
 import com.jmwdgc.imageloader.adapter.ImageListAdapter;
 import com.jmwdgc.imageloader.common.AnimateFirstDisplayListener;
 import com.jmwdgc.imageloader.common.ImageLoaderTools;
+import com.jmwdgc.imageloader.utils.ColorPhrase;
 import com.nostra13.universalimageloader.core.DisplayImageOptions;
 import com.nostra13.universalimageloader.core.ImageLoader;
 import com.nostra13.universalimageloader.core.assist.ImageSize;
@@ -181,6 +182,13 @@ public class MyActivity extends BaseActivity {
 
 		ImageListAdapter imageListAdapter = new ImageListAdapter(mContext, Arrays.asList(IMAGE_URL_LIST));
 		imgListView.setAdapter(imageListAdapter);
+
+		//最简单的改变一段文字中的部分字的颜色
+		CharSequence formatted = ColorPhrase.from("I'm {Chinese}, I love {China}")
+				.withSeparator("{}")
+				.innerColor(0xFFE6454A)
+				.outerColor(0xFF666666)
+				.format();
 	}
 
 	@Override
